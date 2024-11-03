@@ -1,0 +1,60 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.admin-panel {
+    display: flex;  
+}   
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: red;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+
+}
+
+.sidebar ul li a {
+    color: yellow;
+    text-decoration: none;
+
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.content-section {
+    display: none;
+
+}
+
+.content-section.active {
+    display: block;
+}
+

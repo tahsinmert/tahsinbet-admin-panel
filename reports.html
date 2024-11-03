@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Reports</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h2>Reports</h2>
+        <div class="report-filters">
+            <label for="reportType">Select Report Type:</label>
+            <select id="reportType">
+                <option value="sales">Sales Report</option>
+                <option value="user-activity">User  Activity Report</option>
+                <option value="system-status">System Status Report</option>
+            </select>
+            <button id="generateReportBtn">Generate Report</button>
+        </div>
+        <div id="reportOutput" class="report-output">
+            <!-- Report will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Admin Panel</p>
+    </footer>
+    <script src="reports.js"></script>
+</body>
+</html>

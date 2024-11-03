@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="sidebar-toggle">Toggle Sidebar</button>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="cards">
+            <div class="card">Total Users</div>
+            <div class="card">Active Sessions</div>
+            <div class="card">Sales</div>
+            <div class="card">New Orders</div>
+        </section>
+        <section class="charts">
+            <h2>Analytics Overview</h2>
+            <div id="chart-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

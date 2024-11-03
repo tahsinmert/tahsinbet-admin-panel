@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h2>Settings</h2>
+        <form id="settingsForm">
+            <div class="form-group">
+                <label for="siteTitle">Site Title:</label>
+                <input type="text" id="siteTitle" name="siteTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="siteDescription">Site Description:</label>
+                <textarea id="siteDescription" name="siteDescription" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="adminEmail">Admin Email:</label>
+                <input type="email" id="adminEmail" name="adminEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="maintenanceMode">Maintenance Mode:</label>
+                <select id="maintenanceMode" name="maintenanceMode">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+            </div>
+            <button type="submit">Save Settings</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Admin Panel</p>
+    </footer>
+    <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TahsinBet Admin Panel</title>
+    <link rel="stylesheet" href="tahsinbet_admin_panel.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="dashboard.html" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="users.html" onclick="showSection('users')">Users</a></li>
+                <li><a href="settings.html" onclick="showSection('settings')">Settings</a></li>
+                <li><a href="reports.html" onclick="showSection('reports')">Reports</a></li>
+                <li><a href="logout.html" onclick="showSection('logout')">Logout</a></li>
+            </ul>
+            </aside>
+
+            <main class="main-content">
+                <div id="dashboard" class="content-section">
+                    <h2>Dashboard</h2>
+                    <p>TahsinBet Admin Panelimize Hoşgeldiniz</p>
+                    </div>
+                    <div id="users" class="content-section">
+                        <h2>Kullanıclar</h2>
+                        <p>Ayarlarınızı buradan değiştirebilirsiniz.</p>
+                    </div>
+                    <div id="reports" class="content-section">
+                        <h2>Raporlar</h2>
+                        <p>Raporlarınızı buradan görebilirsiniz</p>
+                    </div>
+                    <div id="logout" class="content-section">
+                        <h2>Çıkış</h2>
+                        <p>Çıkış yaptınız...</p>
+                    </div>
+            </main>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
